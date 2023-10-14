@@ -468,7 +468,7 @@ a.active {
   margin-bottom: 16px;
 }
 
-.footer__subscribe-box {
+.footer__container-subscribe {
   display: flex;
   justify-content: space-between;
 }
