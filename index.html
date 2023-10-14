@@ -639,10 +639,11 @@
               value="true"
             />
             <label for="user-privacy" class="check__text">
-              <span class="input__text-accept"
-                ><svg class="input__icon-check" width="10" height="8">
-                  <use href="./images/icons.svg#icon-check"></use></svg
-              ></span>
+              <span class="input__text-accept">
+                <svg class="input__icon-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a href="#" class="input__link">Privacy Policy</a>
             </label>
@@ -659,17 +660,12 @@
         .querySelector('#modal-close')
         .addEventListener('click', closeModal);
 
-      backdropRef.addEventListener('click', closeModal);
-
       document
         .querySelector('#show-modal')
         .addEventListener('click', openModal);
 
       function closeModal(event) {
-        if (event.target === event.currentTarget) {
-          event.stopPropagation();
-          backdropRef.classList.remove('is-open');
-        }
+        backdropRef.classList.remove('is-open');
       }
 
       function openModal() {
