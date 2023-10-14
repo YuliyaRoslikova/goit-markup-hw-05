@@ -554,11 +554,14 @@
         <div class="footer__form-container">
           <p class="footer__subscribe-subtitle">Subscribe</p>
           <form class="footer__container-subscribe">
-            <label for="footer-form" class="footer__input-label"></label>
+            <label for="footer-form" class="footer__input-label" hidden>
+              E-mail
+            </label>
             <input
               type="email"
               class="footer__input"
               name="email"
+              id="footer-form"
               placeholder="E-mail"
             />
             <button type="submit" class="footer__btn button">
